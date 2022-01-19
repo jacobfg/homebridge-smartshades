@@ -143,7 +143,7 @@ var setupShadeServices = function (that, services)
 
 					break;
 				}
-				case 90: // Move the shade to favorite position
+				case 10: // Move the shade to favorite position
 				{
 					send(that.config.code + "-gb!wt") // ! + <motor-code>
 
@@ -169,7 +169,7 @@ var setupShadeServices = function (that, services)
 				}
 				default:
 				{
-					// Do nothing if a value 1-49, or 51-99 is selected!
+					// Do nothing if a value 1-9, 11-49, or 51-99 is selected!
 					console.log(chalk.red("*Debug* - You must slide window covering all the way up or down for anything to happen!"));
 				}
 			}
