@@ -135,7 +135,7 @@ var setupShadeServices = function (that, services)
 			{
 				case 0: // Close the Shade!
 				{
-					send(that.config.code + "-dn")
+					send(that.config.code + '-dn')
 					setTimeout( function(){
 						targetPosition.updateValue(50);
 						currentPosition.updateValue(50)
@@ -145,7 +145,7 @@ var setupShadeServices = function (that, services)
 				}
 				case 10: // Move the shade to favorite position
 				{
-					send(that.config.code + "-gb!wt") // ! + <motor-code>
+					send(that.config.code + '-gb!wt') // ! + <motor-code>
 
 					// NEO controller doesn't detect actual position, reset shade after 20 seconds to show the user the shade is at half-position - i.e., neither up or down!
 					setTimeout( function(){
@@ -157,7 +157,7 @@ var setupShadeServices = function (that, services)
 				}
 				case 100: // Open the shade
 				{
-					send(that.config.code + "-up")
+					send(that.config.code + '-up')
 
 					// NEO controller doesn't detect actual position, reset shade after 20 seconds to show the user the shade is at half-position - i.e., neither up or down!
 					setTimeout( function(){
