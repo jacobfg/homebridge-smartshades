@@ -145,7 +145,7 @@ var setupShadeServices = function (that, services)
 				}
 				case 10: // Move the shade to favorite position
 				{
-					send(that.config.code + '-gb\!wt') // ! + <motor-code>
+					send(that.config.code + '-gb!wt') // ! + <motor-code>
 
 					// NEO controller doesn't detect actual position, reset shade after 20 seconds to show the user the shade is at half-position - i.e., neither up or down!
 					setTimeout( function(){
