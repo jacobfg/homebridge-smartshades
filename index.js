@@ -145,7 +145,8 @@ var setupShadeServices = function (that, services)
 				}
 				case 10: // Move the shade to favorite position
 				{
-					send(that.config.code + '-gb!wt') // ! + <motor-code>
+					// https://github.com/mtgeekman/Home_Assistant_NeoSmartBlinds/blob/master/const.py 
+					send(that.config.code + '-gp!wt') // ! + <motor-code>
 
 					// NEO controller doesn't detect actual position, reset shade after 20 seconds to show the user the shade is at half-position - i.e., neither up or down!
 					setTimeout( function(){
