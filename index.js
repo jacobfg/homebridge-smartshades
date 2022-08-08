@@ -106,6 +106,9 @@ var setupShadeServices = function (that, services)
 								setTimeout( ()=> {cb()}, 500);
 							});
 					});
+				telnetClient.on("error", e => {
+					reject(`Endpoint is unreachable: ${that.platformConfig.host}:8839. ${e && e.message}`)
+				});
 			}
 			sendQueue.push(sendfunction)
 		}
