@@ -100,8 +100,11 @@ var setupShadeServices = function (that, services)
 				var telnetClient = net.createConnection(8839, that.platformConfig.host, ()=> 
 					{
 						console.log(chalk.green(`Connected to: ${that.platformConfig.host}:8839`)) 
-						telnetClient.write(command +"\r", ()=> 
+						telnetClient.write(command +"\r\n", (err)=> 
 							{
+								if (err) {
+									console.error('CLIENT_WRITE1_ERROR', err.code);
+								}
 								var now = new Date();
 								console.log(chalk.green(`Sent Command: ${command} at time: ${now.toLocaleTimeString()}`)) 
 								setTimeout( ()=> {cb()}, 500);
