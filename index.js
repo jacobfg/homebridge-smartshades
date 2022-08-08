@@ -99,6 +99,7 @@ var setupShadeServices = function (that, services)
 			{
 				var telnetClient = net.createConnection(8839, that.platformConfig.host, ()=> 
 					{
+						console.log(chalk.green(`Connected to: ${that.platformConfig.host}:8839`)) 
 						telnetClient.write(command +"\r", ()=> 
 							{
 								var now = new Date();
