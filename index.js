@@ -128,7 +128,7 @@ var setupShadeServices = function (that, services)
 				case 24:
 				case 25:
 				case 26: // Move Shade to Favorite position!
-					send(that.config.code + "-gp" + (that.config.motorType ? that.config.motorType : "bf"))
+					send(that.config.code + "-gp!" + (that.config.motorType ? that.config.motorType : "bf"))
 					setTimeout( function(){
 						targetPosition.updateValue(50);
 						currentPosition.updateValue(50)
