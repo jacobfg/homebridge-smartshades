@@ -1,6 +1,6 @@
 {
   "name": "homebridge-smartshades",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "NEO SmartShades Plugin for homebridge: https://github.com/jvmahon/homebridge-smartshades",
   "license": "ISC",
   "keywords": [
@@ -9,10 +9,10 @@
     "homebridge-NEOSmartShades",
     "homebridge- NEO Smart Shades"
   ],
-  "repository": "github:jvmahon/homebridge-smartshades",
+  "repository": "github:jacobfg/homebridge-smartshades",
   
   "bugs": {
-    "url": "https://github.com/jvmahon/homebridge-smartshades/issues"
+    "url": "https://github.com/jacobfg/homebridge-smartshades/issues"
   },
   "engines": {
     "node": ">=16.0.0",
